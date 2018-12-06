@@ -1,0 +1,436 @@
+@import 'base.less';
+// 顶部导航
+.top {
+    // width: 100%;
+    border-bottom: 1px solid  #ccc;
+    height: 40px;
+    ul {
+        width: 980px;
+        // background-color: pink;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #8d8d8d;
+        overflow: hidden;
+        li {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            &:first-child {
+                width: 228px;
+                border-right: 1px solid #ccc;
+            }
+            &:nth-child(2) {
+                width: 324px;
+                border-right: 1px solid #ccc;
+            }
+            &:nth-child(3) {
+                width: 180px;
+                border-right: 1px solid #ccc;
+            }
+            &:nth-child(4) {
+                width: 243px;
+                position: relative;
+                a:first-child {
+                  display: block;
+                  height: 26px;
+                  width: 72px;
+                  background-color: red;
+                  color: #ffffff;
+                  line-height: 26px;
+                  float: left;
+                  border-radius: 3px;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  margin-left: -36px;
+                  margin-top: -13px;
+                  font-size: 14px;
+                }
+                a:nth-child(2) {
+                    float: left;
+                    color:#8d8d8d;
+                    font-size: 14px;
+                    margin-left: 172px;
+                }
+            }
+         }
+    }
+}
+//轮播图部分
+.aside {
+    img {
+        width: 100%;
+        height: 352px;
+    }
+    
+}
+// 手机移动端导航
+.viewport {
+    display: none;
+}
+// 主题导航部分
+.waiwei {
+        height: 64px;
+        border-bottom: 1px solid #c6cbcf;
+        .top_navs {
+        width: 980px;
+        height: 64px;
+        margin: 0 auto;
+        line-height: 64px;
+        color: #878787;
+        font-size: 16px;
+        overflow: hidden;
+        img {
+            height: 33.89px;
+            width: 145px;
+            margin-top: 13px;
+            float: left;
+        }
+        ul {
+            overflow: hidden;
+            float: left;
+            margin-left: 40px;
+            li {
+                width: 94px;
+                height: 64px;
+                float: left;
+                a {
+                    color: #878787;
+                }
+            }
+        }
+        .geren {
+            color: #878787;
+            margin-left: 90px;
+        }
+    }
+}
+// 理财相关介绍
+.introduce {
+    height: 170px;
+    overflow: hidden;
+    border-bottom: 1px solid #c6cbcf;
+    .explain {
+        width: 980px;
+        margin: 0 auto;
+        padding: 20px;
+        dl {
+            float: left;
+            width: 33.3%;
+            box-sizing: border-box;
+            &:nth-child(3){
+                padding-left: 40px;
+            }
+            dt {
+                line-height: 1;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+            dd {
+                span {
+                    font-size: 20px;
+                    margin-right: 5px;
+                    color: #666;
+                }
+                font-size: 14px;
+                line-height: 2;
+            }
+        }
+
+    }
+}
+// 特别提醒部分
+.notify {
+    height: 98px;
+    border-bottom: 1px solid #c6cbcf;
+    .xinbiao {
+        padding-top: 10px;
+        box-sizing: border-box;
+        width: 980px;
+        margin: 0 auto;
+        height: 98px;
+        font-size: 14px;}
+        p {
+            line-height: 1.5;
+            &:first-child {
+                span {
+                    color:#efb513;
+                }
+            }
+            &:nth-child(2) {
+                .ju {
+                    color:#efb513;
+                }
+                .what {
+                    color: #428bca;
+                    margin-left: 18px;
+                }
+                .rightnow {
+                    color: #efb513;
+                    border-bottom: 1px dashed #efb513;
+                    margin-left: 22px;
+                }
+
+            }
+        }
+}
+// 特别推荐
+.recommend {
+    height: 510px;
+    background-image: url(../images/box-style-bg.png);
+    overflow: hidden;
+    ul {
+        width: 980px;
+        margin: 15px auto;
+        overflow: hidden;
+        border-bottom: 1px solid #c6cbcf;
+        padding-left: 20px;
+        box-sizing: border-box;
+        li {
+            float: left;
+            width: 96px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            &:first-child {
+                border-bottom: 2px solid red;
+            }
+            a {
+                color: #333;
+                font-size: 15px;
+            }
+        }
+
+    }
+    // 展示与说明
+    .shuoming {
+        height:40px;
+        width: 980px;
+        background-color: #ffffff;
+        line-height: 40px;
+        font-size: 14px;
+        margin: 0 auto;
+        color: #333;
+        position: relative;
+        p {
+            margin-left: 18px;
+        }
+        span {
+            position: absolute;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+            border-bottom: 8px solid #fff;
+            left: 54px;
+            top: -8px;
+        }
+    }
+    // 主题推荐
+    .items {
+        width: 980px;
+        margin: 15px auto;
+        overflow: hidden;
+        .item {
+            width: 31.5%;
+            flex-wrap: wrap;
+            height: 148px;
+            background-color: red;
+            border-radius: 3px 3px 3px 3px;
+            box-sizing: border-box;
+            float: left;
+            margin-left:15px;
+            &:nth-child(2){
+                background-color: #c6cbcf;
+                color: #2c3e50;
+            }
+            &:nth-child(3){
+                background-color: #c6cbcf;
+                color: #2c3e50;
+            }
+            &:nth-child(4) {
+                margin-top: 20px;
+                background-color: #c6cbcf;
+                color: #2c3e50;
+
+            }
+            &:nth-child(5) {
+                margin-top: 20px;
+                background-color: #c6cbcf;
+                color: #2c3e50;
+
+
+            }
+            dl {
+                width: 63%;
+                height: 148px;
+                float: left;
+                padding: 15px 15px;
+                box-sizing: border-box;
+                border-right: 1px dashed black;
+                dt {
+                   font-size: 15px;
+                   color: #fff;
+                   font-weight: 700;
+                }
+                dd {
+                    &:nth-child(2) {
+                     display: flex;
+                     justify-content: space-between;
+                     color: #FFF;
+                     opacity: 0.5;
+                     font-size: 12px;
+                     margin-top: 8px;
+                    }
+                    &:nth-child(3) {
+                     display: flex;
+                     justify-content: space-between;
+                     color: #FFF;
+                     font-size: 18px;
+                     margin-top: 6px;
+                    }
+                    &:nth-child(4) {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #FFF;
+                        opacity: 0.5;
+                        font-size: 12px;
+                        margin-top: 6px;
+                       }
+                       &:nth-child(5) {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #FFF;
+                        font-size: 18px;
+                        margin-top: 6px;
+                       }
+                }
+            }
+            .lilv {
+                float: left;
+                width: 37%;
+                text-align: center;
+                margin-top: 10px;
+                p {
+                    &:first-child {
+                        font-size: 30px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-top: 30px;
+                        small {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+                    &:nth-child(2){
+                        font-size: 12px;
+                        color: #FFF;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// 响应式 
+// 我们先写好的页面是pc端的页面，现在响应式就是要响应平板和手机的页面。
+// 平板小于等于979px
+@media (max-width:979px) {
+    .top {
+        ul {
+            width: 750px;
+            li{
+                &:nth-child(2) {
+                    display: none;
+                }
+
+            }
+        }
+    }
+    
+.viewport {
+    display: none;
+}
+.waiwei {
+    // width: 750px;
+    .top_navs {
+        width: 750px;
+        .geren{
+            display: none;
+        }
+}
+}
+
+.introduce {
+    .explain {
+        width: 750px;
+    }
+}
+}
+.notify {
+    .xinbiao{
+        width: 750px;
+
+    }
+}
+
+
+
+@media (max-width:767px) {
+    .top {
+        display: none;
+    }
+    .viewport {
+        display: block;
+    }
+    .viewport {
+        height: 62px;
+        .fix-top {
+            height: 57px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            line-height: 57px;
+            display: fixed;
+            a {
+                display: block;
+                position: relative;
+                font-size: 16px;
+                color: #586a80;
+                &:first-child {
+                    margin-left: 30px;
+                }
+                i {
+                    height: 28px;
+                    width: 26px;
+                    background-image: url(../images/menu.png);
+                    position: absolute;
+                    top: 15px;
+                    left: -30px;
+                }
+            }
+        }
+    }
+    .waiwei {
+        display: none;
+    }
+    .aside {
+        img {
+            width: 100%;
+            height: 200px;
+        }
+        
+    }
+    .introduce {
+        display: none;
+    }
+    .notify {
+        display: none;
+    }
+    
+}
